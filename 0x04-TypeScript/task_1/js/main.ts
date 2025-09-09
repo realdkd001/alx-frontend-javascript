@@ -19,7 +19,7 @@ function printTeacher({ firstName, lastName }: Teacher): string {
   return `${firstName}. ${lastName}`;
 }
 
-export interface StudentClassInterface {
+export interface Student {
     firstName: string;
     lastName: string;
     workOnHomework(): string;
@@ -27,7 +27,7 @@ export interface StudentClassInterface {
 }
 
 
-class StudentClass implements StudentClassInterface {
+class StudentClass implements Student{
     firstName: string;
     lastName: string;
     
