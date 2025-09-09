@@ -12,9 +12,9 @@ export interface Director extends Teacher {
 }
 
 export interface printTeacherFunction {
-    (firstName: string, lastName: string): string;
+    ({ firstName, lastName }: Teacher): string;
 }
 
-function printTeacher({ firstName, lastName }: { firstName: string; lastName: string }): string {
+function printTeacher({ firstName, lastName }: Teacher): string {
   return `${firstName}. ${lastName}`;
 }
