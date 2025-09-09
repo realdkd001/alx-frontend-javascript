@@ -15,6 +15,6 @@ export interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 
-export function printTeacher(firstName, lastName)  {
+export function printTeacher(firstName: string, lastName: string): string {
     return `${firstName}. ${lastName}`;
 }   
