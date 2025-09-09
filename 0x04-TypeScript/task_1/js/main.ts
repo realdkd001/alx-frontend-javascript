@@ -7,7 +7,7 @@ export interface Teacher {
     [key: string]: any;
 }
 
-export interface Directors extends Teacher {
+export interface Director extends Teacher {
     numberOfReports: number;
 }
 
