@@ -19,12 +19,10 @@ function printTeacher({ firstName, lastName }: Teacher): string {
   return `${firstName}. ${lastName}`;
 }
 
-// Interface that describes the constructor
 export interface StudentConstructor {
   new (firstName: string, lastName: string): StudentClass;
 }
 
-// Interface for the Student object
 export interface Student {
   firstName: string;
   lastName: string;
