@@ -57,7 +57,7 @@ export function executeWork(employee: Director | Teacher): string {
 
 export type Subjects = "Math" | "History";
 
-export function teachClass(todayClass: Subjects): string {
+export function teachClass(todayClass:Subjects): string {
   switch (todayClass) {
     case "Math":
       return "Teaching Math";
