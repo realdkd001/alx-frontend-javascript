@@ -1,7 +1,7 @@
-/// <reference path="./Subject.ts" />
-/// <reference path="./Java.ts" />
-/// <reference path="./Cpp.ts" />
-/// <reference path="./Teacher.ts" />
+/// <reference path="./subjects/Subject.ts" />
+/// <reference path="./subjects/Java.ts" />
+/// <reference path="./subjects/Cpp.ts" />
+/// <reference path="./subjects/Teacher.ts" />
 
 
 export const cpp = new Subjects.Cpp();
