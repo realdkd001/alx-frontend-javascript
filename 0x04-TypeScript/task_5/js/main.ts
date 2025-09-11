@@ -14,14 +14,10 @@ export interface MinorCredits extends MinorCreditsBrand {
 }
 
 
-export function sumMajorCredits(subjects1: number, subject2: number): MajorCredits {
-  return {
-    credits: subjects1 + subject2,
-  } as MajorCredits;
+export function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits): number {
+  return subject1.credits + subject2.credits
 }
 
-export function sumMinorCredits(subject1: number, subject2: number): MinorCredits {
-  return {
-    credits: subject1 + subject2,
-  } as MinorCredits;
+export function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits): number {
+  return subject1.credits + subject2.credits
 }
